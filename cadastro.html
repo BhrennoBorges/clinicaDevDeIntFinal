@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Clínica Ana Cristine - Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+
+    <header>
+        <div class="area-logo">
+            <div class="logo-alinhado">
+                <img src="image.png" alt="logo Clinica Ana Cristine">
+                <div class="logo-texto">
+                    <h4>Clínica</h4>
+                    <p>Ana Cristine</p>
+                </div>
+            </div>
+        </div>
+        <nav class="barra-navegacao">
+            <h1>CADASTRO</h1>
+            <img src="Flag_of_Brazil.png" alt="Bandeira do Brasil">
+        </nav>
+    </header>
+
+    <main>
+        <div class="cadastro-container">
+            <p class="intro-text">
+                Precisamos de alguns dados pessoais para adiantarmos seu atendimento no dia da consulta. Os dados cadastrados devem ser do Paciente que será consultado. É muito importante a veracidade de todos os dados informados abaixo.
+            </p>
+            <form id="signupForm">
+                <fieldset class="form-section">
+                    <legend>INFORMAÇÕES PESSOAIS</legend>
+                    <div class="form-grid">
+                        <div class="form-group grid-col-span-2">
+                            <label for="nome">Nome Completo* (Sem abreviações)</label>
+                            <input id="nome" type="text" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cpf">CPF*</label>
+                            <input id="cpf" type="text" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="nascimento">Data de Nascimento*</label>
+                            <input id="nascimento" type="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="genero">Gênero*</label>
+                            <select id="genero" required>
+                                <option value="" disabled selected>--Selecione--</option>
+                                <option value="masculino">Masculino</option>
+                                <option value="feminino">Feminino</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="celular">Celular*</label>
+                            <input id="celular" type="tel" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="carteirinha">Número da Carteirinha</label>
+                            <input id="carteirinha" type="text">
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="form-section">
+                    <legend>INFORMAÇÕES DE ACESSO</legend>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="email">Email*</label>
+                            <input id="email" type="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email-confirm">Confirme seu Email*</label>
+                            <input id="email-confirm" type="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="senha">Senha*</label>
+                            <input id="senha" type="password" required>
+                            <div class="requirements-list">
+                                <p>Sua senha deve ter:</p>
+                                <ul>
+                                    <li>No mínimo 6 caracteres</li>
+                                    <li>No mínimo 1 número</li>
+                                    <li>No mínimo 1 caractere especial</li>
+                                    <li>No mínimo 1 letra maiúscula</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="senha-confirm">Confirme sua Senha*</label>
+                            <input id="senha-confirm" type="password" required>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="terms-group">
+                    <input id="termos" type="checkbox" required>
+                    <label for="termos">Concordo com os <a href="#">Termos de Serviço</a> e a <a href="#">Política de Privacidade</a> do cadastro clínico.</label>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Salvar</button>
+                    <span>ou</span>
+                    <a href="index.html" class="btn-secondary">Cancelar</a>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <div class="accessibility-tools">
+        <a href="#" title="Alternar Alto Contraste">
+            <img src="pcd1.png" alt="Ícone de Alto Contraste">
+        </a>
+        <a href="#" title="Aumentar Fonte">
+            <img src="pcd2.png" alt="Ícone de Aumentar Fonte">
+        </a>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Clínica Ana Cristine. Todos os direitos reservados.</p>
+    </footer>
+
+    </body>
+</html>

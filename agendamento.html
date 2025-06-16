@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Clínica Ana Cristine - Agendamento</title>
+    <link rel="stylesheet" href="agendamento.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="area-logo">
+            <div class="logo-alinhado">
+                <img src="image.png" alt="logo Clinica Ana Cristine">
+                <div class="logo-texto">
+                    <h4>Clínica</h4>
+                    <p>Ana Cristine</p>
+                </div>
+            </div>
+        </div>
+        <nav class="barra-navegacao">
+            <h1>AGENDAMENTO</h1>
+            <img src="Flag_of_Brazil.png" alt="Bandeira do Brasil">
+        </nav>
+    </header>
+
+    <main>
+        <div class="agendamento-container">
+
+            <section class="filtros-section">
+                <h2>Agendar Consulta</h2>
+                <form class="form-filtros">
+                    <div class="form-group">
+                        <label for="plano-saude">Plano de Saúde*</label>
+                        <select id="plano-saude" required>
+                            <option value="" disabled selected>Selecione o plano</option>
+                            <option value="plano1">Plano A</option>
+                            <option value="plano2">Plano B</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="especialidade">Especialidade*</label>
+                        <select id="especialidade" required>
+                            <option value="" disabled selected>Selecione a especialidade</option>
+                            <option value="cardio">Cardiologia</option>
+                            <option value="dermato">Dermatologia</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="medico">Médico*</label>
+                        <select id="medico" required>
+                            <option value="" disabled selected>Selecione o médico</option>
+                            <option value="dr-joao">Dr. João</option>
+                            <option value="dra-maria">Dra. Maria</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Buscar Horários</button>
+                </form>
+            </section>
+
+            <section class="resultados-section">
+                <h2>Horários Disponíveis para <span id="medico-selecionado">...</span></h2>
+
+                <div class="calendario-horarios-wrapper">
+                    <div id="calendario-wrapper">
+                        <p class="loading-text">Por favor, preencha os filtros e clique em "Buscar Horários".</p>
+                    </div>
+
+                    <div id="horarios-wrapper">
+                        <h3>Selecione um dia no calendário</h3>
+                        <div class="horarios-disponiveis">
+                        </div>
+                    </div>
+                </div>
+                <div class="legenda">
+                    <span><span class="cor-legenda disponivel"></span>Disponível</span>
+                    <span><span class="cor-legenda ocupado"></span>Ocupado</span>
+                    <span><span class="cor-legenda selecionado"></span>Selecionado</span>
+                </div>
+                <div class="confirmar-agendamento">
+                    <button class="btn btn-primary" disabled>Confirmar Agendamento</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div class="accessibility-tools">
+        <a href="#" title="Alternar Alto Contraste">
+            <img src="pcd1.png" alt="Ícone de Alto Contraste">
+        </a>
+        <a href="#" title="Aumentar Fonte">
+            <img src="pcd2.png" alt="Ícone de Aumentar Fonte">
+        </a>
+    </div>
+
+    <script src="agendamento.js"></script>
+</body>
+<footer class="footer">
+        <p>&copy; 2025 Clínica Ana Cristine. Todos os direitos reservados.</p>
+    </footer>
+</html>
